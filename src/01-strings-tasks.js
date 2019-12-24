@@ -66,7 +66,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-  return value.replace(',', '');
+  return value.slice(7, value.length - 1);
 }
 
 
@@ -269,9 +269,8 @@ function isString(value) {
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId(value) {
-  value.split(',');
-  return value.indexOf();
+function getCardId(/* value */) {
+  throw new Error('Not implemented');
 }
 
 
